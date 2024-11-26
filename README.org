@@ -1,0 +1,119 @@
+﻿#+title: CS2 Annotations
+
+Map annotations for Counter-Strike 2
+
+* Usage
+** Installation
+*** Prerequisites
+If you are reading this, you already have this, duh
+- [[https://store.steampowered.com/app/730/CounterStrike_2/][CS2]]
+- [[https://git-scm.com/downloads/guis][git]]
+
+*** Cloning
+Clone this repository into your CS2 installation,
+
+**** Linux
+Normally it resides in ~~/.local/share/Steam/steamapps/common/Counter-Strike\
+Global\ Offensive/game/csgo/annotations~, but it may vary a bit if your Steam
+library resides on a different disk or if you chose a non-standard directory for
+it.
+
+#+begin_src fish
+  git clone \
+    --origin 'upstream'
+    'https://github.com/Dietr1ch/CS2-annotations' \
+    ~/.local/share/Steam/steamapps/common/Counter-Strike\ Global\ Offensive/game/csgo/annotations
+#+end_src
+
+**** Windows
+Clone this repository into your CS2 installation,
+
+Normally it resides in ~C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global
+Offensive\game\csgo\annotations~, but it may vary a bit if your Steam library
+resides on a different disk or if you chose a non-standard directory for it.
+
+***** Using the terminal
+To clone, open up your [[https://apps.microsoft.com/detail/9n0dx20hk701][terminal]] and run,
+
+#+begin_src fish
+  git clone \
+    --origin 'upstream' \
+    'https://github.com/Dietr1ch/CS2-annotations' \
+    ~/.local/share/Steam/steamapps/common/Counter-Strike\ Global\ Offensive/game/csgo/annotations
+#+end_src
+
+***** Using a GUI
+You might want to use a [[https://git-scm.com/downloads/guis?os=windows][GUI]] to clone the repository, just make sure to clone
+into the right directory.
+
+** Updating
+#+begin_src fish
+  cd ~/.local/share/Steam/steamapps/common/Counter-Strike\ Global\ Offensive/game/csgo/annotations && git pull
+#+end_src
+
+* Annotating
+** Adding annotations
+Creating new annotations is a two-step process,
+
+*** Save in-game data
+- Start the game with annotations enabled (use ~sv_allow_annotations 1~)
+- Throw the lineup you want to create annotations for (this is important to
+  record the destination target, whether it is a jump throw, etc.)
+- Open the console and type ~annotation_create grenade newLineup~
+- Save the annotations with ~annotation_save de_map-name~
+
+**** Commands
+Annotations use the ~annotation\_\*~ commands in the console. Below are some
+useful commands:
+
+- ~annotation_create~ :: Creates a new lineup, described below. Omit parameters
+  to get help text. The below commands can be used in combination to provide a
+  more detailed lineup, with where to stand, where to aim, etc.
+  - ~annotation_create grenade "TEXT"~ :: Creates a set of annotations with
+    predefined values and uses a grenade icon with an arrow to help find the
+    lineup. the text field becomes the name of the lineup. This also results in
+    the lineup having a success-score, where after 2 successful throws, the help
+    text and icons will disappear, and you will have to line it up yourself for
+    2 more successful throws. This is the recommended way to create lineups, but
+    do note that the help text needs to be customized in the annotations file
+    manually.
+  - ~annotation_create position "TEXT"~ :: Adds a position on the map with the
+    given text and displayed with a pair of boots
+  - ~annotation_create spot~ :: Creates two markers where you are looking to
+    help you align your lineup.
+  - ~annotation_create text "free text" "extra text" float~ :: Creates a text
+    floating in the air at where you are looking. Useful for providing
+    additional information, such as what the lineup is for. the "extra text"
+    parameter is optional, and provides a second line of text.
+  - ~annotation_create text "free text" "extra text" surface~ :: Similar to the
+    above command, but the text is attached to a wall or similar
+- ~annotation_save <filename>~ :: Save the current annotations to a file, after
+  doing so copy it back to this repository
+- ~annotation_reload~ :: Reload the annotations, useful when creating new
+  annotations
+
+*** Adjust annotations in text files
+- Modify the 3 new annotations (those in the bottom of the file), the
+  following properties are useful to check:
+  - For the first annotation (the position annotation):
+    - ~Color~ :: The color of the annotation, see [[Colour codes]]
+    - ~Desc.Text~ :: A second line of text for the standing position, useful for
+      advanced instructions
+  - For the second annotation (the lineup/marker annotation):
+    - ~Desc.Text~ :: A second line of text for aiming instructions, useful for
+      advanced lineups, and to instruct the type of throw, e.g. "Middle click,
+      jump throw", make sure to remove the 'aim instructions'
+  - For the third annotation (the destination annotation):
+    - ~DistanceThreshold~ :: The size of the target circle, useful for showing
+      the accuracy needed for the lineup
+
+**** Colour codes
+Colours are saved in RGB. These are colours used in-game,
+
+- White :: ~[ 255, 255, 255 ]~
+- CT blue :: ~[ 151, 201, 250 ]~
+- T yellow :: ~[ 234, 191, 86 ]~
+
+* Contributing
+This is still work-in progress. Contributing to the original annotation
+repository is preferred, https://github.com/ReneRebsdorf/CS2-annotations/

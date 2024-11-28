@@ -4,11 +4,15 @@ cargo-features = ["edition2024"]
 name = "cs2-annotations"
 version = "0.1.0"
 edition = "2024"
+default-run = "main"
 
 [dependencies]
 clap = { version = "4.5.21", features = ["derive"] }
 fern = "0.7.0"
 humantime = "2.1.0"
-kv3 = { version = "0.1.1", features = ["serde"] }
+kv3 = { git ="https://github.com/dxshie/kv3", features = ["serde"] }
 log = "0.4.22"
 serde = { version = "1.0.215", features = ["serde_derive"] }
+strum = { version = "0.26.3", features = ["derive", "strum_macros"] }
+strum_macros = "0.26.4"
+thiserror = "2.0.3"

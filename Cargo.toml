@@ -8,7 +8,8 @@ default-run = "main"
 
 [dependencies]
 clap = { version = "4.5.21", features = ["derive"] }
-fern = "0.7.0"
+concolor-clap = "0.1.0"
+fern = { version = "0.7.0", features = ["colored"] }
 humantime = "2.1.0"
 kv3 = { git ="https://github.com/dxshie/kv3", features = ["serde"] }
 log = "0.4.22"

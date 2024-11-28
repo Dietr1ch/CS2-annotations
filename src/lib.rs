@@ -351,7 +351,410 @@ struct SillyMapAnnotation {
     map_annotation_node98: Node,
     #[serde(default)]
     map_annotation_node99: Node,
-    // XXX: There's up to 100 nodes
+
+    #[serde(default)]
+    map_annotation_node100: Node,
+    #[serde(default)]
+    map_annotation_node101: Node,
+    #[serde(default)]
+    map_annotation_node102: Node,
+    #[serde(default)]
+    map_annotation_node103: Node,
+    #[serde(default)]
+    map_annotation_node104: Node,
+    #[serde(default)]
+    map_annotation_node105: Node,
+    #[serde(default)]
+    map_annotation_node106: Node,
+    #[serde(default)]
+    map_annotation_node107: Node,
+    #[serde(default)]
+    map_annotation_node108: Node,
+    #[serde(default)]
+    map_annotation_node109: Node,
+    #[serde(default)]
+    map_annotation_node110: Node,
+    #[serde(default)]
+    map_annotation_node111: Node,
+    #[serde(default)]
+    map_annotation_node112: Node,
+    #[serde(default)]
+    map_annotation_node113: Node,
+    #[serde(default)]
+    map_annotation_node114: Node,
+    #[serde(default)]
+    map_annotation_node115: Node,
+    #[serde(default)]
+    map_annotation_node116: Node,
+    #[serde(default)]
+    map_annotation_node117: Node,
+    #[serde(default)]
+    map_annotation_node118: Node,
+    #[serde(default)]
+    map_annotation_node119: Node,
+    #[serde(default)]
+    map_annotation_node120: Node,
+    #[serde(default)]
+    map_annotation_node121: Node,
+    #[serde(default)]
+    map_annotation_node122: Node,
+    #[serde(default)]
+    map_annotation_node123: Node,
+    #[serde(default)]
+    map_annotation_node124: Node,
+    #[serde(default)]
+    map_annotation_node125: Node,
+    #[serde(default)]
+    map_annotation_node126: Node,
+    #[serde(default)]
+    map_annotation_node127: Node,
+    #[serde(default)]
+    map_annotation_node128: Node,
+    #[serde(default)]
+    map_annotation_node129: Node,
+    #[serde(default)]
+    map_annotation_node130: Node,
+    #[serde(default)]
+    map_annotation_node131: Node,
+    #[serde(default)]
+    map_annotation_node132: Node,
+    #[serde(default)]
+    map_annotation_node133: Node,
+    #[serde(default)]
+    map_annotation_node134: Node,
+    #[serde(default)]
+    map_annotation_node135: Node,
+    #[serde(default)]
+    map_annotation_node136: Node,
+    #[serde(default)]
+    map_annotation_node137: Node,
+    #[serde(default)]
+    map_annotation_node138: Node,
+    #[serde(default)]
+    map_annotation_node139: Node,
+    #[serde(default)]
+    map_annotation_node140: Node,
+    #[serde(default)]
+    map_annotation_node141: Node,
+    #[serde(default)]
+    map_annotation_node142: Node,
+    #[serde(default)]
+    map_annotation_node143: Node,
+    #[serde(default)]
+    map_annotation_node144: Node,
+    #[serde(default)]
+    map_annotation_node145: Node,
+    #[serde(default)]
+    map_annotation_node146: Node,
+    #[serde(default)]
+    map_annotation_node147: Node,
+    #[serde(default)]
+    map_annotation_node148: Node,
+    #[serde(default)]
+    map_annotation_node149: Node,
+    #[serde(default)]
+    map_annotation_node150: Node,
+    #[serde(default)]
+    map_annotation_node151: Node,
+    #[serde(default)]
+    map_annotation_node152: Node,
+    #[serde(default)]
+    map_annotation_node153: Node,
+    #[serde(default)]
+    map_annotation_node154: Node,
+    #[serde(default)]
+    map_annotation_node155: Node,
+    #[serde(default)]
+    map_annotation_node156: Node,
+    #[serde(default)]
+    map_annotation_node157: Node,
+    #[serde(default)]
+    map_annotation_node158: Node,
+    #[serde(default)]
+    map_annotation_node159: Node,
+    #[serde(default)]
+    map_annotation_node160: Node,
+    #[serde(default)]
+    map_annotation_node161: Node,
+    #[serde(default)]
+    map_annotation_node162: Node,
+    #[serde(default)]
+    map_annotation_node163: Node,
+    #[serde(default)]
+    map_annotation_node164: Node,
+    #[serde(default)]
+    map_annotation_node165: Node,
+    #[serde(default)]
+    map_annotation_node166: Node,
+    #[serde(default)]
+    map_annotation_node167: Node,
+    #[serde(default)]
+    map_annotation_node168: Node,
+    #[serde(default)]
+    map_annotation_node169: Node,
+    #[serde(default)]
+    map_annotation_node170: Node,
+    #[serde(default)]
+    map_annotation_node171: Node,
+    #[serde(default)]
+    map_annotation_node172: Node,
+    #[serde(default)]
+    map_annotation_node173: Node,
+    #[serde(default)]
+    map_annotation_node174: Node,
+    #[serde(default)]
+    map_annotation_node175: Node,
+    #[serde(default)]
+    map_annotation_node176: Node,
+    #[serde(default)]
+    map_annotation_node177: Node,
+    #[serde(default)]
+    map_annotation_node178: Node,
+    #[serde(default)]
+    map_annotation_node179: Node,
+    #[serde(default)]
+    map_annotation_node180: Node,
+    #[serde(default)]
+    map_annotation_node181: Node,
+    #[serde(default)]
+    map_annotation_node182: Node,
+    #[serde(default)]
+    map_annotation_node183: Node,
+    #[serde(default)]
+    map_annotation_node184: Node,
+    #[serde(default)]
+    map_annotation_node185: Node,
+    #[serde(default)]
+    map_annotation_node186: Node,
+    #[serde(default)]
+    map_annotation_node187: Node,
+    #[serde(default)]
+    map_annotation_node188: Node,
+    #[serde(default)]
+    map_annotation_node189: Node,
+    #[serde(default)]
+    map_annotation_node190: Node,
+    #[serde(default)]
+    map_annotation_node191: Node,
+    #[serde(default)]
+    map_annotation_node192: Node,
+    #[serde(default)]
+    map_annotation_node193: Node,
+    #[serde(default)]
+    map_annotation_node194: Node,
+    #[serde(default)]
+    map_annotation_node195: Node,
+    #[serde(default)]
+    map_annotation_node196: Node,
+    #[serde(default)]
+    map_annotation_node197: Node,
+    #[serde(default)]
+    map_annotation_node198: Node,
+    #[serde(default)]
+    map_annotation_node199: Node,
+
+    #[serde(default)]
+    map_annotation_node200: Node,
+    #[serde(default)]
+    map_annotation_node201: Node,
+    #[serde(default)]
+    map_annotation_node202: Node,
+    #[serde(default)]
+    map_annotation_node203: Node,
+    #[serde(default)]
+    map_annotation_node204: Node,
+    #[serde(default)]
+    map_annotation_node205: Node,
+    #[serde(default)]
+    map_annotation_node206: Node,
+    #[serde(default)]
+    map_annotation_node207: Node,
+    #[serde(default)]
+    map_annotation_node208: Node,
+    #[serde(default)]
+    map_annotation_node209: Node,
+    #[serde(default)]
+    map_annotation_node210: Node,
+    #[serde(default)]
+    map_annotation_node211: Node,
+    #[serde(default)]
+    map_annotation_node212: Node,
+    #[serde(default)]
+    map_annotation_node213: Node,
+    #[serde(default)]
+    map_annotation_node214: Node,
+    #[serde(default)]
+    map_annotation_node215: Node,
+    #[serde(default)]
+    map_annotation_node216: Node,
+    #[serde(default)]
+    map_annotation_node217: Node,
+    #[serde(default)]
+    map_annotation_node218: Node,
+    #[serde(default)]
+    map_annotation_node219: Node,
+    #[serde(default)]
+    map_annotation_node220: Node,
+    #[serde(default)]
+    map_annotation_node221: Node,
+    #[serde(default)]
+    map_annotation_node222: Node,
+    #[serde(default)]
+    map_annotation_node223: Node,
+    #[serde(default)]
+    map_annotation_node224: Node,
+    #[serde(default)]
+    map_annotation_node225: Node,
+    #[serde(default)]
+    map_annotation_node226: Node,
+    #[serde(default)]
+    map_annotation_node227: Node,
+    #[serde(default)]
+    map_annotation_node228: Node,
+    #[serde(default)]
+    map_annotation_node229: Node,
+    #[serde(default)]
+    map_annotation_node230: Node,
+    #[serde(default)]
+    map_annotation_node231: Node,
+    #[serde(default)]
+    map_annotation_node232: Node,
+    #[serde(default)]
+    map_annotation_node233: Node,
+    #[serde(default)]
+    map_annotation_node234: Node,
+    #[serde(default)]
+    map_annotation_node235: Node,
+    #[serde(default)]
+    map_annotation_node236: Node,
+    #[serde(default)]
+    map_annotation_node237: Node,
+    #[serde(default)]
+    map_annotation_node238: Node,
+    #[serde(default)]
+    map_annotation_node239: Node,
+    #[serde(default)]
+    map_annotation_node240: Node,
+    #[serde(default)]
+    map_annotation_node241: Node,
+    #[serde(default)]
+    map_annotation_node242: Node,
+    #[serde(default)]
+    map_annotation_node243: Node,
+    #[serde(default)]
+    map_annotation_node244: Node,
+    #[serde(default)]
+    map_annotation_node245: Node,
+    #[serde(default)]
+    map_annotation_node246: Node,
+    #[serde(default)]
+    map_annotation_node247: Node,
+    #[serde(default)]
+    map_annotation_node248: Node,
+    #[serde(default)]
+    map_annotation_node249: Node,
+    #[serde(default)]
+    map_annotation_node250: Node,
+    #[serde(default)]
+    map_annotation_node251: Node,
+    #[serde(default)]
+    map_annotation_node252: Node,
+    #[serde(default)]
+    map_annotation_node253: Node,
+    #[serde(default)]
+    map_annotation_node254: Node,
+    #[serde(default)]
+    map_annotation_node255: Node,
+    #[serde(default)]
+    map_annotation_node256: Node,
+    #[serde(default)]
+    map_annotation_node257: Node,
+    #[serde(default)]
+    map_annotation_node258: Node,
+    #[serde(default)]
+    map_annotation_node259: Node,
+    #[serde(default)]
+    map_annotation_node260: Node,
+    #[serde(default)]
+    map_annotation_node261: Node,
+    #[serde(default)]
+    map_annotation_node262: Node,
+    #[serde(default)]
+    map_annotation_node263: Node,
+    #[serde(default)]
+    map_annotation_node264: Node,
+    #[serde(default)]
+    map_annotation_node265: Node,
+    #[serde(default)]
+    map_annotation_node266: Node,
+    #[serde(default)]
+    map_annotation_node267: Node,
+    #[serde(default)]
+    map_annotation_node268: Node,
+    #[serde(default)]
+    map_annotation_node269: Node,
+    #[serde(default)]
+    map_annotation_node270: Node,
+    #[serde(default)]
+    map_annotation_node271: Node,
+    #[serde(default)]
+    map_annotation_node272: Node,
+    #[serde(default)]
+    map_annotation_node273: Node,
+    #[serde(default)]
+    map_annotation_node274: Node,
+    #[serde(default)]
+    map_annotation_node275: Node,
+    #[serde(default)]
+    map_annotation_node276: Node,
+    #[serde(default)]
+    map_annotation_node277: Node,
+    #[serde(default)]
+    map_annotation_node278: Node,
+    #[serde(default)]
+    map_annotation_node279: Node,
+    #[serde(default)]
+    map_annotation_node280: Node,
+    #[serde(default)]
+    map_annotation_node281: Node,
+    #[serde(default)]
+    map_annotation_node282: Node,
+    #[serde(default)]
+    map_annotation_node283: Node,
+    #[serde(default)]
+    map_annotation_node284: Node,
+    #[serde(default)]
+    map_annotation_node285: Node,
+    #[serde(default)]
+    map_annotation_node286: Node,
+    #[serde(default)]
+    map_annotation_node287: Node,
+    #[serde(default)]
+    map_annotation_node288: Node,
+    #[serde(default)]
+    map_annotation_node289: Node,
+    #[serde(default)]
+    map_annotation_node290: Node,
+    #[serde(default)]
+    map_annotation_node291: Node,
+    #[serde(default)]
+    map_annotation_node292: Node,
+    #[serde(default)]
+    map_annotation_node293: Node,
+    #[serde(default)]
+    map_annotation_node294: Node,
+    #[serde(default)]
+    map_annotation_node295: Node,
+    #[serde(default)]
+    map_annotation_node296: Node,
+    #[serde(default)]
+    map_annotation_node297: Node,
+    #[serde(default)]
+    map_annotation_node298: Node,
+    #[serde(default)]
+    map_annotation_node299: Node,
+    // XXX: There's up to 300 nodes
+    // https://store.steampowered.com/news/app/730/view/4472733036435210471
     // TODO: Fix code repetition
 }
 
@@ -805,7 +1208,827 @@ impl From<SillyMapAnnotation> for MapAnnotation {
         if node != empty_node {
             nodes.push(node);
         }
-        // XXX: There's up to 100 nodes
+
+        let node = r.map_annotation_node100;
+        if node == empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node101;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node102;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node103;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node104;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node105;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node106;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node107;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node108;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node109;
+        if node != empty_node {
+            nodes.push(node);
+        }
+
+        let node = r.map_annotation_node110;
+        if node == empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node111;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node112;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node113;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node114;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node115;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node116;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node117;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node118;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node119;
+        if node != empty_node {
+            nodes.push(node);
+        }
+
+        let node = r.map_annotation_node120;
+        if node == empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node121;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node122;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node123;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node124;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node125;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node126;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node127;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node128;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node129;
+        if node != empty_node {
+            nodes.push(node);
+        }
+
+        let node = r.map_annotation_node130;
+        if node == empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node131;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node132;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node133;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node134;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node135;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node136;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node137;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node138;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node139;
+        if node != empty_node {
+            nodes.push(node);
+        }
+
+        let node = r.map_annotation_node140;
+        if node == empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node141;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node142;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node143;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node144;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node145;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node146;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node147;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node148;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node149;
+        if node != empty_node {
+            nodes.push(node);
+        }
+
+        let node = r.map_annotation_node150;
+        if node == empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node151;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node152;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node153;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node154;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node155;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node156;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node157;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node158;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node159;
+        if node != empty_node {
+            nodes.push(node);
+        }
+
+        let node = r.map_annotation_node160;
+        if node == empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node161;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node162;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node163;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node164;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node165;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node166;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node167;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node168;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node169;
+        if node != empty_node {
+            nodes.push(node);
+        }
+
+        let node = r.map_annotation_node170;
+        if node == empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node171;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node172;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node173;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node174;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node175;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node176;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node177;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node178;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node179;
+        if node != empty_node {
+            nodes.push(node);
+        }
+
+        let node = r.map_annotation_node180;
+        if node == empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node181;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node182;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node183;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node184;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node185;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node186;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node187;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node188;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node189;
+        if node != empty_node {
+            nodes.push(node);
+        }
+
+        let node = r.map_annotation_node190;
+        if node == empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node191;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node192;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node193;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node194;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node195;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node196;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node197;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node198;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node199;
+        if node != empty_node {
+            nodes.push(node);
+        }
+
+        let node = r.map_annotation_node200;
+        if node == empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node201;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node202;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node203;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node204;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node205;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node206;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node207;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node208;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node209;
+        if node != empty_node {
+            nodes.push(node);
+        }
+
+        let node = r.map_annotation_node210;
+        if node == empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node211;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node212;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node213;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node214;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node215;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node216;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node217;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node218;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node219;
+        if node != empty_node {
+            nodes.push(node);
+        }
+
+        let node = r.map_annotation_node220;
+        if node == empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node221;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node222;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node223;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node224;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node225;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node226;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node227;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node228;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node229;
+        if node != empty_node {
+            nodes.push(node);
+        }
+
+        let node = r.map_annotation_node230;
+        if node == empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node231;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node232;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node233;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node234;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node235;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node236;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node237;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node238;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node239;
+        if node != empty_node {
+            nodes.push(node);
+        }
+
+        let node = r.map_annotation_node240;
+        if node == empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node241;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node242;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node243;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node244;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node245;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node246;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node247;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node248;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node249;
+        if node != empty_node {
+            nodes.push(node);
+        }
+
+        let node = r.map_annotation_node250;
+        if node == empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node251;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node252;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node253;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node254;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node255;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node256;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node257;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node258;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node259;
+        if node != empty_node {
+            nodes.push(node);
+        }
+
+        let node = r.map_annotation_node260;
+        if node == empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node261;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node262;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node263;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node264;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node265;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node266;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node267;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node268;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node269;
+        if node != empty_node {
+            nodes.push(node);
+        }
+
+        let node = r.map_annotation_node270;
+        if node == empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node271;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node272;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node273;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node274;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node275;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node276;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node277;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node278;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node279;
+        if node != empty_node {
+            nodes.push(node);
+        }
+
+        let node = r.map_annotation_node280;
+        if node == empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node281;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node282;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node283;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node284;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node285;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node286;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node287;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node288;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node289;
+        if node != empty_node {
+            nodes.push(node);
+        }
+
+        let node = r.map_annotation_node290;
+        if node == empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node291;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node292;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node293;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node294;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node295;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node296;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node297;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node298;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        let node = r.map_annotation_node299;
+        if node != empty_node {
+            nodes.push(node);
+        }
+        // XXX: There's up to 300 nodes
 
         MapAnnotation {
             map_name: r.map_name,

@@ -2,21 +2,21 @@ use strum::IntoEnumIterator;
 
 use cs2_annotations::args;
 use cs2_annotations::logging;
-use cs2_annotations::map::CSMap;
-use cs2_annotations::map::MapAnnotation;
+use cs2_annotations::map;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let args = args::get();
     logging::init(&args)?;
 
     if args.check_all_maps {
-        for m in CSMap::iter() {
+        for m in map::Name::iter() {
             println!("Checking {:?}", m);
-            let _map_annotation = MapAnnotation::read_annotations(m)?;
+            let map_annotation = map::Annotation::read_annotations(m)?;
+            println!("Checking {:#?}", map_annotation);
         }
         println!("All maps passed validation!");
     } else if let Some(map) = args.map {
-        let map_annotation: MapAnnotation = MapAnnotation::read_annotations(map)?;
+        let map_annotation: map::Annotation = map::Annotation::read_annotations(map)?;
         println!("{:#?}", map_annotation);
     }
 

@@ -1,11 +1,11 @@
 use clap::Parser;
 
-use crate::map::CSMap;
+use crate::map;
 
 #[derive(Debug, Parser)]
 #[command(version, about, long_about = None)]
 pub struct Args {
-    pub map: Option<CSMap>,
+    pub map: Option<map::Name>,
 
     #[arg(long, default_value_t = false)]
     pub check_all_maps: bool,

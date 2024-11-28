@@ -783,7 +783,9 @@ impl MapAnnotation {
             .replace("\r\n", "\n");
 
         match MapAnnotation::try_from(text.as_ref()) {
-            Err(MapAnnotationError::ParseError) => Err(MapAnnotationError::ParseErrorOnFile(file_name)),
+            Err(MapAnnotationError::ParseError) => {
+                Err(MapAnnotationError::ParseErrorOnFile(file_name))
+            }
             annotation => annotation,
         }
     }

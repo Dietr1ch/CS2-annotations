@@ -5,8 +5,10 @@ use crate::map::CSMap;
 #[derive(Debug, Parser)]
 #[command(version, about, long_about = None)]
 pub struct Args {
-    #[arg(value_enum, default_value_t = CSMap::Dust2)]
-    pub map: CSMap,
+    pub map: Option<CSMap>,
+
+    #[arg(long, default_value_t = false)]
+    pub check_all_maps: bool,
 
     // Logging
     #[command(flatten)]

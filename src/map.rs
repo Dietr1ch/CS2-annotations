@@ -795,12 +795,12 @@ impl Annotation {
     fn verify(&self) -> Result<(), AnnotationParseError> {
         let mut node_ids = HashSet::<String>::new();
         let mut missing_ids = 0usize;
-        for n in self.nodes.iter() {
-            if n.id.is_empty() {
+        for node in self.nodes.iter() {
+            if node.id.is_empty() {
                 missing_ids += 1;
                 continue;
             }
-            if !node_ids.insert(n.id.clone()) {
+            if !node_ids.insert(node.id.clone()) {
                 // Id already existed
                 return Err(AnnotationParseError::DuplicateId);
             }

@@ -1,3 +1,5 @@
+use std::collections::HashSet;
+
 use strum_macros::EnumIter;
 
 use kv3::kv3_serde::serde_kv3;
@@ -762,6 +764,7 @@ struct SillyMapAnnotation {
 pub enum MapAnnotationError {
     ParseError,
     ParseErrorOnFile(&'static str),
+    DuplicateId,
 }
 
 #[derive(Debug, Default)]
@@ -779,8 +782,29 @@ impl MapAnnotation {
             .expect("Failed to read map annotations file")
             .replace("\r\n", "\n");
 
-        MapAnnotation::try_from(text.as_ref())
-            .map_err(|_| MapAnnotationError::ParseErrorOnFile(file_name))
+        match MapAnnotation::try_from(text.as_ref()) {
+            Err(MapAnnotationError::ParseError) => Err(MapAnnotationError::ParseErrorOnFile(file_name)),
+            annotation => annotation,
+        }
+    }
+
+    fn verify(&self) -> Result<(), MapAnnotationError> {
+        let mut node_ids = HashSet::<String>::new();
+        let mut missing_ids = 0usize;
+        for n in self.nodes.iter() {
+            if n.id.is_empty() {
+                missing_ids += 1;
+                continue;
+            }
+            if !node_ids.insert(n.id.clone()) {
+                // Id already existed
+                return Err(MapAnnotationError::DuplicateId);
+            }
+        }
+
+        assert_eq!(node_ids.len() + missing_ids, self.nodes.len());
+
+        Ok(())
     }
 }
 
@@ -789,7 +813,9 @@ impl TryFrom<&str> for MapAnnotation {
 
     fn try_from(s: &str) -> Result<MapAnnotation, MapAnnotationError> {
         let s: SillyMapAnnotation = serde_kv3(s).map_err(|_| MapAnnotationError::ParseError)?;
-        Ok(MapAnnotation::from(s))
+        let map_annotation = MapAnnotation::from(s);
+        map_annotation.verify()?;
+        Ok(map_annotation)
     }
 }
 

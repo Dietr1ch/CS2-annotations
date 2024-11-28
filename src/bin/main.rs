@@ -15,7 +15,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         }
         println!("All maps passed validation!");
     } else if let Some(map) = args.map {
-        println!("{:#?}", map::Annotation::read(map)?);
+        let a = map::Annotation::read(map)?;
+        println!("{}", a);
     }
 
     Ok(())

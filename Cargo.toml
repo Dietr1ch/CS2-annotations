@@ -9,8 +9,10 @@ default-run = "main"
 [dependencies]
 clap = { version = "4.5.21", features = ["derive"] }
 concolor-clap = "0.1.0"
+derive_more = { version = "1.0.0", features = ["display"] }
 fern = { version = "0.7.0", features = ["colored"] }
 humantime = "2.1.0"
+itertools = "0.13.0"
 kv3 = { git ="https://github.com/dxshie/kv3", features = ["serde"] }
 log = "0.4.22"
 multimap = "0.10.0"

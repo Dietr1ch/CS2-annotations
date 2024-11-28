@@ -1,8 +1,9 @@
 use std::collections::HashSet;
 
+use itertools::Itertools;
 use kv3::kv3_serde::serde_kv3;
-use strum_macros::EnumIter;
 use multimap::MultiMap;
+use strum_macros::EnumIter;
 
 #[derive(Clone, Debug, Default, EnumIter, clap::ValueEnum)]
 pub enum Name {
@@ -38,10 +39,12 @@ mod annotation {
     use serde::Deserialize;
     use serde::Serialize;
 
-    #[derive(Debug, Default, PartialEq, Deserialize, Serialize)]
+    #[derive(Debug, derive_more::Display, Default, PartialEq, Deserialize, Serialize)]
+    #[display("Text()")]
     pub struct Text {}
 
-    #[derive(Debug, Default, PartialEq, Deserialize, Serialize)]
+    #[derive(Debug, derive_more::Display, Default, PartialEq, Deserialize, Serialize)]
+    #[display("{}", text)]
     #[serde(rename_all = "PascalCase")]
     pub struct Title {
         // Text = ""
@@ -56,6 +59,12 @@ mod annotation {
         // FadeOutDist = 40.0
         #[serde(default)]
         pub fade_out_dist: f32,
+    }
+
+    impl Title {
+        pub fn is_empty(&self) -> bool {
+            self.text.is_empty()
+        }
     }
 
     // Currently the same as Title
@@ -76,6 +85,21 @@ mod annotation {
         pub fade_out_dist: f32,
     }
 
+    impl Description {
+        pub fn is_empty(&self) -> bool {
+            self.text.is_empty()
+        }
+    }
+
+    impl std::fmt::Display for Description {
+        fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+            write!(
+                f,
+                "*** Instructions\n- {}",
+                self.text.replace("\\n", "\n- ")
+            )
+        }
+    }
     #[derive(Debug, Default, PartialEq, Deserialize, Serialize)]
     #[serde(rename_all = "PascalCase")]
     pub struct Node {
@@ -88,6 +112,8 @@ mod annotation {
         // Id = "860dd8f2-cc23-432e-81a7-03ebd7956940"
         #[serde(default)]
         pub id: String,
+        // SubType = "aim_target"
+        // SubType = "destination"
         // SubType = "main"
         #[serde(default)]
         pub sub_type: String,
@@ -141,6 +167,20 @@ mod annotation {
         // DistanceThreshold = 80.0
         #[serde(default)]
         pub distance_threshold: f32,
+    }
+
+    impl std::fmt::Display for Node {
+        fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+            write!(
+                f,
+                "** {}\n:PROPERTIES:\n:ID:  {}\n:PARENT: {}\n:END:\n\n{}\n- JumpThrow:  {}\n",
+                self.title,
+                self.id,
+                self.master_node_id,
+                self.description,
+                (if self.jump_throw { "Yes" } else { "No" }),
+            )
+        }
     }
 
     #[derive(Debug, Default, Deserialize, Serialize)]
@@ -804,6 +844,8 @@ impl Annotation {
         let mut missing_ids = 0usize;
         for node in self.nodes.iter() {
             if node.id.is_empty() {
+                // NOTE: Some `MapAnnotationNode`s are missing `Id`
+                // TODO: Consider whether this should be allowed.
                 missing_ids += 1;
                 continue;
             }
@@ -816,6 +858,17 @@ impl Annotation {
         assert_eq!(node_ids.len() + missing_ids, self.nodes.len());
 
         Ok(())
+    }
+}
+
+impl std::fmt::Display for Annotation {
+    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+        write!(
+            f,
+            "* {}\n{}",
+            self.map_name,
+            self.nodes.iter().filter(|n| !n.title.is_empty()).join("\n")
+        )
     }
 }
 

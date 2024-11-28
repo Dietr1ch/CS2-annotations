@@ -778,7 +778,7 @@ pub struct Annotation {
 }
 
 impl Annotation {
-    pub fn read_annotations(map: Name) -> Result<Self, AnnotationParseError> {
+    pub fn read(map: Name) -> Result<Self, AnnotationParseError> {
         let file_name: &str = map.file_name();
         let text = std::fs::read_to_string(file_name)
             .expect("Failed to read map annotations file")

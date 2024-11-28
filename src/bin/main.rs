@@ -11,12 +11,12 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     if args.check_all_maps {
         for m in map::Name::iter() {
             println!("Checking {:?}", m);
-            let map_annotation = map::Annotation::read_annotations(m)?;
+            let map_annotation = map::Annotation::read(m)?;
             println!("Checking {:#?}", map_annotation);
         }
         println!("All maps passed validation!");
     } else if let Some(map) = args.map {
-        let map_annotation: map::Annotation = map::Annotation::read_annotations(map)?;
+        let map_annotation: map::Annotation = map::Annotation::read(map)?;
         println!("{:#?}", map_annotation);
     }
 

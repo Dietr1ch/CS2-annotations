@@ -2,6 +2,7 @@ use std::collections::HashSet;
 
 use kv3::kv3_serde::serde_kv3;
 use strum_macros::EnumIter;
+use multimap::MultiMap;
 
 #[derive(Clone, Debug, Default, EnumIter, clap::ValueEnum)]
 pub enum Name {
@@ -779,6 +780,8 @@ pub struct Annotation {
     // Derived data
     pub node_ids: HashSet<String>,
     pub master_node_ids: HashSet<String>,
+
+    pub node_id_children: MultiMap<String, String>,
 }
 
 impl Annotation {
@@ -2068,6 +2071,7 @@ impl From<annotation::SillyFormat> for Annotation {
         // ============
         let mut node_ids = HashSet::<String>::new();
         let mut master_node_ids = HashSet::<String>::new();
+        let mut node_id_children = MultiMap::<String, String>::new();
         for node in &nodes {
             if !node.id.is_empty() {
                 node_ids.insert(node.id.clone());
@@ -2075,6 +2079,7 @@ impl From<annotation::SillyFormat> for Annotation {
             if !node.master_node_id.is_empty() {
                 master_node_ids.insert(node.master_node_id.clone());
             }
+            node_id_children.insert(node.master_node_id.clone(), node.id.clone());
         }
 
         Annotation {
@@ -2085,6 +2090,7 @@ impl From<annotation::SillyFormat> for Annotation {
             // Derived data
             node_ids,
             master_node_ids,
+            node_id_children,
         }
     }
 }

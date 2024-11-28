@@ -775,6 +775,10 @@ pub struct Annotation {
     pub screen_text: annotation::Text,
 
     pub nodes: Vec<annotation::Node>,
+
+    // Derived data
+    pub node_ids: HashSet<String>,
+    pub master_node_ids: HashSet<String>,
 }
 
 impl Annotation {
@@ -2060,10 +2064,27 @@ impl From<annotation::SillyFormat> for Annotation {
         }
         // XXX: There's up to 300 nodes
 
+        // Derived data
+        // ============
+        let mut node_ids = HashSet::<String>::new();
+        let mut master_node_ids = HashSet::<String>::new();
+        for node in &nodes {
+            if !node.id.is_empty() {
+                node_ids.insert(node.id.clone());
+            }
+            if !node.master_node_id.is_empty() {
+                master_node_ids.insert(node.master_node_id.clone());
+            }
+        }
+
         Annotation {
             map_name: r.map_name,
             screen_text: r.screen_text,
             nodes,
+
+            // Derived data
+            node_ids,
+            master_node_ids,
         }
     }
 }

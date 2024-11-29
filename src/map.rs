@@ -1,11 +1,13 @@
 use std::collections::HashSet;
 
-use itertools::Itertools;
 use kv3::kv3_serde::serde_kv3;
 use multimap::MultiMap;
+use orgize::Org;
 use strum_macros::EnumIter;
 
-#[derive(Clone, Debug, Default, EnumIter, clap::ValueEnum)]
+#[derive(
+    Clone, Debug, derive_more::Display, Default, EnumIter, clap::ValueEnum, derive_more::FromStr,
+)]
 pub enum Name {
     Ancient,
     Anubis,
@@ -35,16 +37,33 @@ impl Name {
     }
 }
 
+impl TryFrom<&str> for Name {
+    type Error = ParseError;
+
+    fn try_from(s: &str) -> Result<Name, ParseError> {
+        match s {
+            "de_ancient" => Ok(Name::Ancient),
+            "de_anubis" => Ok(Name::Anubis),
+            "de_dust2" => Ok(Name::Dust2),
+            "de_inferno" => Ok(Name::Inferno),
+            "de_mirage" => Ok(Name::Mirage),
+            "de_nuke" => Ok(Name::Nuke),
+            "de_overpass" => Ok(Name::Overpass),
+            "de_train" => Ok(Name::Train),
+            "de_vertigo" => Ok(Name::Vertigo),
+            _ => Err(ParseError::Error),
+        }
+    }
+}
+
 mod annotation {
     use serde::Deserialize;
     use serde::Serialize;
 
-    #[derive(Debug, derive_more::Display, Default, PartialEq, Deserialize, Serialize)]
-    #[display("Text()")]
+    #[derive(Debug, Default, PartialEq, Deserialize, Serialize)]
     pub struct Text {}
 
-    #[derive(Debug, derive_more::Display, Default, PartialEq, Deserialize, Serialize)]
-    #[display("{}", text)]
+    #[derive(Debug, Default, PartialEq, Deserialize, Serialize)]
     #[serde(rename_all = "PascalCase")]
     pub struct Title {
         // Text = ""
@@ -85,21 +104,6 @@ mod annotation {
         pub fade_out_dist: f32,
     }
 
-    impl Description {
-        pub fn is_empty(&self) -> bool {
-            self.text.is_empty()
-        }
-    }
-
-    impl std::fmt::Display for Description {
-        fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
-            write!(
-                f,
-                "*** Instructions\n- {}",
-                self.text.replace("\\n", "\n- ")
-            )
-        }
-    }
     #[derive(Debug, Default, PartialEq, Deserialize, Serialize)]
     #[serde(rename_all = "PascalCase")]
     pub struct Node {
@@ -167,20 +171,6 @@ mod annotation {
         // DistanceThreshold = 80.0
         #[serde(default)]
         pub distance_threshold: f32,
-    }
-
-    impl std::fmt::Display for Node {
-        fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
-            write!(
-                f,
-                "** {}\n:PROPERTIES:\n:ID:  {}\n:PARENT: {}\n:END:\n\n{}\n- JumpThrow:  {}\n",
-                self.title,
-                self.id,
-                self.master_node_id,
-                self.description,
-                (if self.jump_throw { "Yes" } else { "No" }),
-            )
-        }
     }
 
     #[derive(Debug, Default, Deserialize, Serialize)]
@@ -804,15 +794,21 @@ mod annotation {
 }
 
 #[derive(Debug, strum_macros::Display, thiserror::Error)]
-pub enum AnnotationParseError {
-    ParseError,
-    ParseErrorOnFile(&'static str),
+pub enum ParseError {
+    Error,
+    ErrorOnFile(&'static str),
     DuplicateId,
+}
+
+#[derive(Debug, strum_macros::Display, thiserror::Error)]
+pub enum ExportError {
+    OrgError,
 }
 
 #[derive(Debug, Default)]
 pub struct Annotation {
-    pub map_name: String,
+    pub name: Name,
+    pub map_name_str: String,
     pub screen_text: annotation::Text,
 
     pub nodes: Vec<annotation::Node>,
@@ -825,33 +821,30 @@ pub struct Annotation {
 }
 
 impl Annotation {
-    pub fn read(map: Name) -> Result<Self, AnnotationParseError> {
+    pub fn read(map: Name) -> Result<Self, ParseError> {
         let file_name: &str = map.file_name();
         let text = std::fs::read_to_string(file_name)
             .expect("Failed to read map annotations file")
             .replace("\r\n", "\n");
 
         match Annotation::try_from(text.as_ref()) {
-            Err(AnnotationParseError::ParseError) => {
-                Err(AnnotationParseError::ParseErrorOnFile(file_name))
-            }
+            Err(ParseError::Error) => Err(ParseError::ErrorOnFile(file_name)),
             annotation => annotation,
         }
     }
 
-    fn verify(&self) -> Result<(), AnnotationParseError> {
+    fn verify(&self) -> Result<(), ParseError> {
         let mut node_ids = HashSet::<String>::new();
         let mut missing_ids = 0usize;
         for node in self.nodes.iter() {
             if node.id.is_empty() {
                 // NOTE: Some `MapAnnotationNode`s are missing `Id`
-                // TODO: Consider whether this should be allowed.
                 missing_ids += 1;
                 continue;
             }
             if !node_ids.insert(node.id.clone()) {
                 // Id already existed
-                return Err(AnnotationParseError::DuplicateId);
+                return Err(ParseError::DuplicateId);
             }
         }
 
@@ -859,25 +852,110 @@ impl Annotation {
 
         Ok(())
     }
-}
 
-impl std::fmt::Display for Annotation {
-    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
-        write!(
-            f,
-            "* {}\n{}",
-            self.map_name,
-            self.nodes.iter().filter(|n| !n.title.is_empty()).join("\n")
-        )
+    pub fn to_org(&self) -> Result<Org, ExportError> {
+        let base_org = format!(
+            indoc::indoc! {"
+            :PROPERTIES:
+            :ID:      {}
+            :END:
+            #+title: CS2| {}
+            #+filetags: :Games:CS2:CS2-Maps:
+
+        "},
+            uuid::Uuid::new_v5(&uuid::Uuid::NAMESPACE_DNS, self.name.to_string().as_bytes()),
+            self.name,
+        );
+
+        let mut org = Org::parse_string(base_org);
+        let doc = org.document();
+
+        {
+            let info = orgize::Headline::new(
+                orgize::elements::Title {
+                    raw: "Info".into(),
+                    ..Default::default()
+                },
+                &mut org,
+            );
+            doc.append(info, &mut org)
+                .map_err(|_| ExportError::OrgError)?;
+        }
+
+        {
+            let lineups = orgize::Headline::new(
+                orgize::elements::Title {
+                    raw: "Lineups".into(),
+                    ..Default::default()
+                },
+                &mut org,
+            );
+            doc.append(lineups, &mut org)
+                .map_err(|_| ExportError::OrgError)?;
+
+            for n in self.nodes.iter() {
+                if n.title.is_empty() {
+                    continue;
+                }
+
+                let mut node = orgize::Headline::new(
+                    orgize::elements::Title {
+                        raw: n.title.text.clone().into(),
+                        ..Default::default()
+                    },
+                    &mut org,
+                );
+                node.set_level(2, &mut org)
+                    .map_err(|_| ExportError::OrgError)?;
+
+                let mut properties = Vec::<(String, String)>::new();
+                properties.push(("ID".to_string(), n.id.clone()));
+                if !n.master_node_id.is_empty() {
+                    properties.push(("MASTER_NODE_ID".to_string(), n.master_node_id.clone()));
+                }
+                properties.push(("TYPE".to_string(), n.r#type.clone()));
+                properties.push(("SUBTYPE".to_string(), n.sub_type.clone()));
+                properties.push(("POSITION".to_string(), format!("{:?}", n.position)));
+                properties.push(("ANGLES".to_string(), format!("{:?}", n.angles)));
+                if !n.jump_throw {
+                    properties.push(("NOTES".to_string(), "JUMP_THROW".to_string()));
+                }
+
+                let instructions = format!("- {}", n.description.text.replace("\\n", "\n- "));
+
+                let contents = format!(
+                    indoc::indoc! {"
+                    :PROPERTIES:
+                    {}
+                    :END:
+
+                    {}
+
+                "},
+                    properties
+                        .iter()
+                        .map(|kv| format!(":{}: {}", kv.0, kv.1))
+                        .collect::<Vec<_>>()
+                        .join("\n"),
+                    instructions,
+                );
+
+                node.set_section_content(contents, &mut org);
+                lineups
+                    .append(node, &mut org)
+                    .map_err(|_| ExportError::OrgError)?;
+            }
+        }
+
+        Ok(org)
     }
 }
 
 impl TryFrom<&str> for Annotation {
-    type Error = AnnotationParseError;
+    type Error = ParseError;
 
-    fn try_from(s: &str) -> Result<Annotation, AnnotationParseError> {
-        let s: annotation::SillyFormat =
-            serde_kv3(s).map_err(|_| AnnotationParseError::ParseError)?;
+    fn try_from(s: &str) -> Result<Annotation, ParseError> {
+        let s: annotation::SillyFormat = serde_kv3(s).map_err(|_| ParseError::Error)?;
         let map_annotation = Annotation::from(s);
         map_annotation.verify()?;
         Ok(map_annotation)
@@ -2136,7 +2214,8 @@ impl From<annotation::SillyFormat> for Annotation {
         }
 
         Annotation {
-            map_name: r.map_name,
+            name: Name::try_from(r.map_name.as_ref()).unwrap(),
+            map_name_str: r.map_name,
             screen_text: r.screen_text,
             nodes,
 

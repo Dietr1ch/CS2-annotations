@@ -9,10 +9,9 @@ default-run = "main"
 [dependencies]
 clap = { version = "4.5.21", features = ["derive"] }
 concolor-clap = "0.1.0"
-derive_more = { version = "1.0.0", features = ["display"] }
+derive_more = { version = "1.0.0", features = ["display", "from_str"] }
 fern = { version = "0.7.0", features = ["colored"] }
 humantime = "2.1.0"
-itertools = "0.13.0"
 kv3 = { git ="https://github.com/dxshie/kv3", features = ["serde"] }
 log = "0.4.22"
 multimap = "0.10.0"
@@ -20,3 +19,6 @@ serde = { version = "1.0.215", features = ["serde_derive"] }
 strum = { version = "0.26.3", features = ["derive", "strum_macros"] }
 strum_macros = "0.26.4"
 thiserror = "2.0.3"
+orgize = "0.9.0"
+indoc = "2.0.5"
+uuid = { version = "1.11.0", features = ["v5"] }

@@ -949,6 +949,13 @@ impl Annotation {
 
         Ok(org)
     }
+    pub fn to_org_string(&self) -> Result<String, ExportError> {
+        let org = self.to_org().map_err(|_| ExportError::OrgError)?;
+        let mut writer = Vec::new();
+        org.write_org(&mut writer)
+            .map_err(|_| ExportError::OrgError)?;
+        String::from_utf8(writer).map_err(|_| ExportError::OrgError)
+    }
 }
 
 impl TryFrom<&str> for Annotation {

@@ -16,15 +16,11 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         println!("All maps passed validation!");
     } else if let Some(map) = args.map {
         let a = map::Annotation::read(map)?;
-        let org = a.to_org().map_err(|e| {
+        let org_str = a.to_org_string().map_err(|e| {
             println!("{:?}", e);
             map::ParseError::Error
         })?;
-
-        let mut writer = Vec::new();
-        org.write_org(&mut writer).unwrap();
-        let s = String::from_utf8(writer)?;
-        println!("{}", s);
+        println!("{}", org_str);
     }
 
     Ok(())

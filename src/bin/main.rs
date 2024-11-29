@@ -20,7 +20,10 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             println!("{:?}", e);
             map::ParseError::Error
         })?;
-        println!("{}", org_str);
+
+
+        println!("Writing '{}'", a.name.org_name());
+        std::fs::write(a.name.org_name(), org_str)?;
     }
 
     Ok(())

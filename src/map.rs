@@ -35,6 +35,19 @@ impl Name {
             Name::Vertigo => "de_vertigo.txt",
         }
     }
+    pub fn org_name(&self) -> &'static str {
+        match &self {
+            Name::Ancient => "de_ancient.org",
+            Name::Anubis => "de_anubis.org",
+            Name::Dust2 => "de_dust2.org",
+            Name::Inferno => "de_inferno.org",
+            Name::Mirage => "de_mirage.org",
+            Name::Nuke => "de_nuke.org",
+            Name::Overpass => "de_overpass.org",
+            Name::Train => "de_train.org",
+            Name::Vertigo => "de_vertigo.org",
+        }
+    }
 }
 
 impl TryFrom<&str> for Name {
@@ -921,7 +934,13 @@ impl Annotation {
                     properties.push(("NOTES".to_string(), "JUMP_THROW".to_string()));
                 }
 
-                let instructions = format!("- {}", n.description.text.replace("\\n", "\n- "));
+
+                let instructions;
+                if n.description.text.is_empty() {
+                    instructions = "(No instructions)".to_string();
+                } else {
+                    instructions = format!("- {}", n.description.text.replace("\\n", "\n- "));
+                }
 
                 let contents = format!(
                     indoc::indoc! {"

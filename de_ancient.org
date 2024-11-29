@@ -1,0 +1,575 @@
+:PROPERTIES:
+:ID:      6f1cd77d-c611-5129-b5c1-8d8db29e5ada
+:END:
+#+title: CS2| Ancient
+#+filetags: :Games:CS2:CS2-Maps:
+
+* Info
+* Lineups
+** Smoke red room
+:PROPERTIES:
+:ID: 9e9f0e49-d617-40e1-aa36-2c3e5523f726
+:MASTER_NODE_ID: 7cc60773-dd91-40e8-8841-a99e4e64abb8
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-395.948669, -2141.274414, -43.372669]
+:ANGLES: [-34.08559, 92.732597, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Aim at yellow leaf, step jump throw
+
+** Smoke cave entrance
+:PROPERTIES:
+:ID: 86ec5636-5b02-4b4d-980f-311e6e803227
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-687.973877, -2467.968018, -153.923828]
+:ANGLES: [0.0, 62.87442, 0.0]
+:END:
+
+(No instructions)
+
+** Smoke cave entrance
+:PROPERTIES:
+:ID: c9dc1d0a-2af9-4beb-94c6-705267f95f5e
+:MASTER_NODE_ID: 86ec5636-5b02-4b4d-980f-311e6e803227
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-647.485168, -2388.932617, -47.345219]
+:ANGLES: [-27.373547, 62.874584, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Aim at black line - jump throw
+
+** Smoke B site
+:PROPERTIES:
+:ID: 04c2fa3e-4e51-4b82-8f2c-1de87bd6349f
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-391.971497, -2042.114014, -153.664551]
+:ANGLES: [0.0, 56.212921, 0.0]
+:END:
+
+- Look at blocks
+
+** Smoke B site
+:PROPERTIES:
+:ID: 81283775-9fec-430d-989e-4a5177e08895
+:MASTER_NODE_ID: 04c2fa3e-4e51-4b82-8f2c-1de87bd6349f
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-350.245087, -1979.754761, -23.782372]
+:ANGLES: [-41.382076, 56.212349, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Look at bottom right part of block, but not the corner - step jump throw
+
+** Flash middle above cat
+:PROPERTIES:
+:ID: ea941de1-995f-4218-baf3-a931139bcdb4
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-216.030762, -1954.634888, -164.028381]
+:ANGLES: [0.0, 91.070129, 0.0]
+:END:
+
+- Stand between the signs, lineup is not sensitive
+
+** Flash middle above elbow
+:PROPERTIES:
+:ID: 7869cee3-84e3-45d1-b991-c99b6490e1c8
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-735.966858, -1862.124023, -145.537842]
+:ANGLES: [0.0, 94.132568, 0.0]
+:END:
+
+(No instructions)
+
+** Flash middle above elbow
+:PROPERTIES:
+:ID: 20e8d659-7e93-4c6d-bebf-18c863fefdf8
+:MASTER_NODE_ID: 7869cee3-84e3-45d1-b991-c99b6490e1c8
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-742.490723, -1771.829224, -48.12981]
+:ANGLES: [-25.136049, 94.132477, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Jump throw
+
+** Smoke CT spawn
+:PROPERTIES:
+:ID: 9c850e87-a020-4326-8a4a-31f2de6d15bb
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-1262.755615, -1350.03833, -19.712952]
+:ANGLES: [0.0, 84.549072, 0.0]
+:END:
+
+(No instructions)
+
+** Smoke CT spawn
+:PROPERTIES:
+:ID: ce512a8a-8a32-468f-ab27-c5a069b9294a
+:MASTER_NODE_ID: 9c850e87-a020-4326-8a4a-31f2de6d15bb
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-1255.842529, -1277.593262, 110.68956]
+:ANGLES: [-43.302612, 84.549072, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Jump throw
+
+** Smoke CT spawn
+:PROPERTIES:
+:ID: fc9c4a1d-c1ea-4802-a516-3442c374eede
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-1936.975342, -862.031372, -1.675415]
+:ANGLES: [0.0, 67.035492, 0.0]
+:END:
+
+(No instructions)
+
+** Smoke CT spawn
+:PROPERTIES:
+:ID: c0ed934b-db0a-489c-baeb-63a61fab759c
+:MASTER_NODE_ID: fc9c4a1d-c1ea-4802-a516-3442c374eede
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-1908.521729, -794.883057, 117.148895]
+:ANGLES: [-43.173904, 67.035583, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Jump throw
+
+** Smoke donut
+:PROPERTIES:
+:ID: 093db0c2-4272-4856-b84d-f6bcf2512162
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-1936.841553, -862.034058, -1.619934]
+:ANGLES: [0.0, 75.747986, 0.0]
+:END:
+
+(No instructions)
+
+** Smoke donut
+:PROPERTIES:
+:ID: 164a8b4e-4dc4-41f2-8e9b-953679042509
+:MASTER_NODE_ID: 093db0c2-4272-4856-b84d-f6bcf2512162
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-1916.671387, -781.988098, 105.225868]
+:ANGLES: [-34.36272, 75.856918, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Jump throw
+
+** Smoke CT spawn
+:PROPERTIES:
+:ID: bbd71835-363b-41c5-b96d-fd3d28d86a14
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-2143.968262, -1003.967896, -2.85553]
+:ANGLES: [0.0, 60.333832, 0.0]
+:END:
+
+(No instructions)
+
+** Smoke CT spawn
+:PROPERTIES:
+:ID: c9c717b0-1ec7-443f-9b31-8c01cbe9c627
+:MASTER_NODE_ID: bbd71835-363b-41c5-b96d-fd3d28d86a14
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-2102.876221, -931.827271, 108.336807]
+:ANGLES: [-33.877632, 60.333794, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Jump throw
+
+** Smoke donut
+:PROPERTIES:
+:ID: 521b8e3c-4b6d-469d-afb0-2ab156417971
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-1866.969238, -448.96875, 76.381996]
+:ANGLES: [0.0, 75.016022, 0.0]
+:END:
+
+(No instructions)
+
+** Smoke donut
+:PROPERTIES:
+:ID: 031938a9-7521-47b3-8ca2-8421d02da198
+:MASTER_NODE_ID: 521b8e3c-4b6d-469d-afb0-2ab156417971
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-1842.927124, -359.141052, 175.528381]
+:ANGLES: [-21.581635, 75.016136, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Jump throw
+
+** Smoke temple
+:PROPERTIES:
+:ID: eebac2c4-19f6-480d-b464-5a7166b5d838
+:MASTER_NODE_ID: 17ca39df-6ccf-4588-a734-37b7f832a997
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-1768.194702, -1149.746948, 77.819397]
+:ANGLES: [-28.333261, 86.05024, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Jump throw
+
+** Smoke short
+:PROPERTIES:
+:ID: f99477a0-1d17-443e-950b-08659204f47a
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [1255.968262, -1479.96582, 30.013294]
+:ANGLES: [0.0, 108.86969, 0.0]
+:END:
+
+(No instructions)
+
+** Smoke short
+:PROPERTIES:
+:ID: b9874c6f-6693-4e7e-b856-4483141c54ea
+:MASTER_NODE_ID: f99477a0-1d17-443e-950b-08659204f47a
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [1224.144043, -1386.85498, 103.022614]
+:ANGLES: [-10.265729, 108.869835, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Jump throw
+
+** Smoke long
+:PROPERTIES:
+:ID: d68d6243-a80d-4d70-83d0-b73d737f95e0
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [1255.96875, -1479.966309, 30.013599]
+:ANGLES: [0.0, 93.544464, 0.0]
+:END:
+
+(No instructions)
+
+** Smoke long
+:PROPERTIES:
+:ID: 5c259a35-9b3d-45ee-9894-88871f0f8786
+:MASTER_NODE_ID: d68d6243-a80d-4d70-83d0-b73d737f95e0
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [1249.821289, -1380.724121, 95.8414]
+:ANGLES: [-6.107743, 93.544601, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Jump throw
+
+** Smoke cave
+:PROPERTIES:
+:ID: f23208f1-d06a-4779-a7a0-1014b4d100ea
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [1255.967285, -1479.967285, 30.013449]
+:ANGLES: [0.0, 110.770691, 0.0]
+:END:
+
+(No instructions)
+
+** Molo b default plant
+:PROPERTIES:
+:ID: b1345c97-5e08-4caa-b95a-500dfe0a85c4
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [1127.352905, -1413.894531, 60.03125]
+:ANGLES: [0.0, 100.216248, 0.0]
+:END:
+
+- Jump on the edge of the box
+
+** Molo b default plant
+:PROPERTIES:
+:ID: 22b65071-9c86-4aca-bf66-ddb4a43a3e73
+:MASTER_NODE_ID: b1345c97-5e08-4caa-b95a-500dfe0a85c4
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [1109.644165, -1315.634155, 118.43779]
+:ANGLES: [3.20649, 100.216331, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Aim X as far to the left of the door way, and Y between the two signs, jump throw
+
+** Smoke elbow
+:PROPERTIES:
+:ID: ba3d7e89-951a-41b7-a4aa-c5d710cd126c
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-512.0, 1696.0, 26.8372]
+:ANGLES: [0.0, -90.0, 0.0]
+:END:
+
+- Spawn lineup
+
+** Smoke elbow
+:PROPERTIES:
+:ID: efe144e2-0c6e-4d3c-bb63-391cd9b1fab8
+:MASTER_NODE_ID: ba3d7e89-951a-41b7-a4aa-c5d710cd126c
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-530.062317, 1608.79541, 134.169495]
+:ANGLES: [-27.056713, -101.701691, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Shift walk jump throw - throw before reaching bottom of U
+
+** Smoke red room
+:PROPERTIES:
+:ID: 3e484524-59e2-4fa1-a137-5664f3ed458b
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-735.968994, -2135.957275, -164.082214]
+:ANGLES: [0.0, 88.603027, 0.0]
+:END:
+
+- Wedge yourself between the wall and the rock.
+
+** Top Mid Smoke
+:PROPERTIES:
+:ID: 71184a31-8197-46f7-817a-d5fcd172209f
+:MASTER_NODE_ID: 3e484524-59e2-4fa1-a137-5664f3ed458b
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-728.765747, -2050.335205, -53.399742]
+:ANGLES: [-30.767935, 85.191147, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Place -1y where the right branch and the top
+-  of the sine wave meet, and jumpthrow.
+
+** Flame
+:PROPERTIES:
+:ID: f5b6f6a4-0500-4e66-87b3-8018da64c48e
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-2009.05127, 185.590149, 72.031258]
+:ANGLES: [0.0, 90.0, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- <-- Slowly walk out of cover
+
+** Flaming Crates A
+:PROPERTIES:
+:ID: c84770f4-8f15-4b81-8bc5-a27e8ab06801
+:MASTER_NODE_ID: f5b6f6a4-0500-4e66-87b3-8018da64c48e
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-1993.661377, 284.377869, 137.923172]
+:ANGLES: [-1.175746, 81.145004, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Strong throw with x axis hovering
+-  on the top of the crates.
+
+** CT Ramp Smoke
+:PROPERTIES:
+:ID: 81f3b5e2-8069-4adf-a414-088788386a5c
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [541.923523, 935.959961, 112.051208]
+:ANGLES: [0.0, -59.309692, 0.0]
+:END:
+
+- Line yourself up with the broken stem
+-  in the middle of this shrub.
+
+** CT Ramp Smoke
+:PROPERTIES:
+:ID: feb49836-85b2-4118-bae1-1dc20c73c176
+:MASTER_NODE_ID: 81f3b5e2-8069-4adf-a414-088788386a5c
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [592.960571, 849.970581, 176.661362]
+:ANGLES: [-0.584063, -59.309719, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Line up the X axis on the black crevice,
+-  and have the Y axis on the right side of the two rocks.
+-  and then do a middle powered jumpthrow.
+
+** Molo/Smoke B Main entrance to A
+:PROPERTIES:
+:ID: 14b75e64-49c1-4c81-8197-6e1bb9d6c4d6
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-1672.970947, 1113.460815, 52.03125]
+:ANGLES: [0.0, -118.765297, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Back up into the green mold
+-  when facing the crate.
+
+** Molo/Smoke B Main entrance to A
+:PROPERTIES:
+:ID: 8c245926-72ae-4814-9507-9aa6c1f8435e
+:MASTER_NODE_ID: 14b75e64-49c1-4c81-8197-6e1bb9d6c4d6
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-1715.48938, 1029.980591, 150.846161]
+:ANGLES: [-20.47197, -116.990814, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Aim -1y at the top of the crate,
+-  and then middle throw.
+
+** Molo ninja
+:PROPERTIES:
+:ID: c6e2dac3-927b-4541-b05a-0c40dd5a8214
+:MASTER_NODE_ID: 9a8e8795-c3d4-4083-bb81-e50c0c11574e
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [1012.295959, -837.260803, 111.75119]
+:ANGLES: [-24.769917, 119.487358, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Left click throw
+
+** Smoke short
+:PROPERTIES:
+:ID: ed14e83a-daa5-4f16-81f9-1dcb9b848f4f
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [1056.990479, -916.298767, 9.03125]
+:ANGLES: [0.0, 130.19519, 0.0]
+:END:
+
+(No instructions)
+
+** Smoke short
+:PROPERTIES:
+:ID: 9f54c1de-b745-4127-bbb5-1b3a8f1eec64
+:MASTER_NODE_ID: ed14e83a-daa5-4f16-81f9-1dcb9b848f4f
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [1029.384521, -840.054932, 128.375351]
+:ANGLES: [-35.818321, 109.904076, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Aim at the end of the top most leaf
+- Left click throw
+
+** Smoke long
+:PROPERTIES:
+:ID: 3052787a-5e7e-4a87-b243-36ba83400fc9
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [1056.990479, -916.298767, 9.03125]
+:ANGLES: [0.0, 103.023254, 0.0]
+:END:
+
+(No instructions)
+
+** Smoke long
+:PROPERTIES:
+:ID: 14cc13ae-58ef-411c-96ea-07dbe4f92f76
+:MASTER_NODE_ID: 3052787a-5e7e-4a87-b243-36ba83400fc9
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [1060.469238, -817.882202, 87.233948]
+:ANGLES: [-10.009006, 87.975594, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Aim at the top right nail, middle click jump throw
+
+** Flash A site (pop)
+:PROPERTIES:
+:ID: 9d0ff488-d80d-4203-80df-873fb1cdd2b4
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-1868.96875, 2.149075, 83.03125]
+:ANGLES: [0.0, 117.967407, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Wedge into corner
+
+** Vent Molotov
+:PROPERTIES:
+:ID: 1809464c-8823-4e19-a8e3-70c00d063465
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [1116.37207, -961.798828, 3.528252]
+:ANGLES: [0.0, 124.057281, 0.0]
+:END:
+
+- Infront of left most flower (not the door handle)
+
+** Vent Molotov
+:PROPERTIES:
+:ID: 9c9cb3c6-26c7-4f71-a353-3e54b3b0654f
+:MASTER_NODE_ID: 1809464c-8823-4e19-a8e3-70c00d063465
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [1054.606567, -884.732056, 83.044342]
+:ANGLES: [-9.018937, 128.710556, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Aim at the top right corner of the brick
+- Run forward until crosshair reaches bottom right corner of brick
+- Left click jump throw
+
+** Smoke B doors
+:PROPERTIES:
+:ID: 1fd34808-4c8d-4aa8-b3ed-d5a6f717204b
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-286.100098, 1771.964966, 28.201561]
+:ANGLES: [0.0, -46.811707, 0.0]
+:END:
+
+- Left side of steps
+
+** Smoke B doors
+:PROPERTIES:
+:ID: dec42eda-1a9b-4e49-8357-ab1e58ddec8d
+:MASTER_NODE_ID: 1fd34808-4c8d-4aa8-b3ed-d5a6f717204b
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-226.052231, 1701.11377, 127.54776]
+:ANGLES: [-21.760191, -49.718056, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Aim at the edge of platform on tower
+- Run forward until crosshair reaches the top of the plant
+- Left click jump throw
+

@@ -8,7 +8,17 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let args = args::get();
     logging::init(&args)?;
 
-    if args.check_all_maps {
+    if args.generate_all_maps {
+        for map in map::Name::iter() {
+            println!("Generating org-mode file for {:?}...", &map);
+            let a = map::Annotation::read(map)?;
+            let org_str = a.to_org_string().map_err(|e| {
+                println!("{:?}", e);
+                map::ParseError::Error
+            })?;
+            std::fs::write(a.name.org_name(), org_str)?;
+        }
+    } else if args.check_all_maps {
         for map in map::Name::iter() {
             println!("Checking {:?}", map);
             println!("{:#?}", map::Annotation::read(map)?);
@@ -20,7 +30,6 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             println!("{:?}", e);
             map::ParseError::Error
         })?;
-
 
         println!("Writing '{}'", a.name.org_name());
         std::fs::write(a.name.org_name(), org_str)?;

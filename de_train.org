@@ -1,0 +1,157 @@
+:PROPERTIES:
+:ID:      6c3fd12a-0489-5ba1-ab51-26aa5828237f
+:END:
+#+title: CS2| Train
+#+filetags: :Games:CS2:CS2-Maps:
+
+* Info
+* Lineups
+** #ivy_aim_title
+:PROPERTIES:
+:ID: c531e222-d1c5-4f76-b18e-d5e08d14fab8
+:MASTER_NODE_ID: 3c3f92e4-d72f-4300-a377-edb5193532cc
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-1429.642578, 1439.980713, -48.084019]
+:ANGLES: [-36.787388, -29.954281, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- #ivy_aim
+
+** #a_cross_main_title
+:PROPERTIES:
+:ID: e0609936-dc3f-4cb1-a710-89ed81f12ba2
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-798.96875, 1260.486084, -215.96875]
+:ANGLES: [0.0, -51.249161, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- #a_cross_main
+
+** #a_cross_aim_title
+:PROPERTIES:
+:ID: 95c122a2-1d79-49d0-bc61-dca9dfe8ea77
+:MASTER_NODE_ID: e0609936-dc3f-4cb1-a710-89ed81f12ba2
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-742.503662, 1207.435547, -88.744247]
+:ANGLES: [-39.215954, -43.214165, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- #a_cross_aim
+
+** #longdog_main_title
+:PROPERTIES:
+:ID: 7f2d9b34-68ab-4009-857a-1f6d1a397311
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-362.027344, 1384.029053, -160.966797]
+:ANGLES: [0.0, -90.087891, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- #longdog_main
+
+** #longdog_aim_title
+:PROPERTIES:
+:ID: b7af74b1-4f79-46bf-886e-7d8434f630d4
+:MASTER_NODE_ID: 7f2d9b34-68ab-4009-857a-1f6d1a397311
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-365.735321, 1302.464111, -39.231091]
+:ANGLES: [-35.26487, -92.602905, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- #longdog_aim
+
+** #z_main_title
+:PROPERTIES:
+:ID: 1b735d51-eccd-464a-8606-64e010fe3a01
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-427.969727, 1777.94458, -209.96875]
+:ANGLES: [0.0, -75.233002, 0.0]
+:END:
+
+- #z_main
+
+** #z_aim_title
+:PROPERTIES:
+:ID: 448d9291-34cf-4d5d-b238-8cdad1f3c92c
+:MASTER_NODE_ID: 1b735d51-eccd-464a-8606-64e010fe3a01
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-403.970367, 1686.898926, -112.282982]
+:ANGLES: [-19.685543, -75.23291, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- #z_aim
+
+** Smoke ivy (jumpthrow)
+:PROPERTIES:
+:ID: 503d73b6-8f21-4330-834e-6a4efe7aa3d3
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-1863.790283, 1479.968262, -138.358459]
+:ANGLES: [0.0, -27.537918, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+(No instructions)
+
+** Smoke ivy (jumpthrow)
+:PROPERTIES:
+:ID: 75ee180a-98dc-4e8f-9211-1639d99b46d7
+:MASTER_NODE_ID: 503d73b6-8f21-4330-834e-6a4efe7aa3d3
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-1781.673706, 1437.151733, -36.627563]
+:ANGLES: [-22.167093, -27.53804, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+(No instructions)
+
+** Smoke connector (jumpthrow)
+:PROPERTIES:
+:ID: b16b9e4f-3399-46d7-a458-bf0454cac58a
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-1340.028931, 1463.981445, -169.972107]
+:ANGLES: [0.0, -47.169464, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+(No instructions)
+
+** Smoke gate (jumpthrow)
+:PROPERTIES:
+:ID: 940b5fcb-733d-45e5-a7ad-c7e39a6e1aa4
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-1340.029297, 1463.981934, -169.972168]
+:ANGLES: [0.0, -32.860794, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+(No instructions)
+
+** Smoke gate (jumpthrow)
+:PROPERTIES:
+:ID: f06796f2-c73c-4ff7-a3d1-6a07e74fc3fa
+:MASTER_NODE_ID: 940b5fcb-733d-45e5-a7ad-c7e39a6e1aa4
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-1268.838745, 1417.99585, -54.932117]
+:ANGLES: [-32.057346, -32.860661, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+(No instructions)
+

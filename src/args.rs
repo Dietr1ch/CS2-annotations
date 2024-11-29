@@ -10,6 +10,9 @@ pub struct Args {
     #[arg(long, default_value_t = false)]
     pub check_all_maps: bool,
 
+    #[arg(long, default_value_t = false)]
+    pub generate_all_maps: bool,
+
     // Logging
     #[command(flatten)]
     pub color: concolor_clap::Color,

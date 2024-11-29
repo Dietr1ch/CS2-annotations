@@ -1,0 +1,353 @@
+:PROPERTIES:
+:ID:      0f73868a-ebaf-5f52-9d27-ca9c54d5dcb5
+:END:
+#+title: CS2| Inferno
+#+filetags: :Games:CS2:CS2-Maps:
+
+* Info
+* Lineups
+** Smoke short
+:PROPERTIES:
+:ID: 4fa75260-0488-4536-a9ac-659a41b49755
+:MASTER_NODE_ID: dc25ea53-a585-4b3b-89eb-ffc67f313485
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-753.129639, 771.780945, 53.194569]
+:ANGLES: [-7.483961, -9.397351, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Aim at left part of 'feathers' on arrow
+- Step jump throw
+
+** Smoke ramp
+:PROPERTIES:
+:ID: 3a57cb15-efd1-4c01-b9ab-4a6b32937c56
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [2154.03125, 1914.967041, 140.841324]
+:ANGLES: [0.0, -155.884323, 0.0]
+:END:
+
+- Wedge into corner infront of chair
+
+** Smoke ramp
+:PROPERTIES:
+:ID: 7c20d902-a1f8-4ba5-82ef-e389864d0012
+:MASTER_NODE_ID: 3a57cb15-efd1-4c01-b9ab-4a6b32937c56
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [2081.323486, 1882.419434, 263.503571]
+:ANGLES: [-37.193016, -155.884384, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Middle of black line on wall
+
+** Smoke street
+:PROPERTIES:
+:ID: 5170b9d8-0ac9-48d8-a48e-54b8a78c8a8d
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [2214.03125, 1926.968018, 138.079575]
+:ANGLES: [0.0, -133.965225, 0.0]
+:END:
+
+- Wedge into corner by wall and flowers
+
+** Smoke street
+:PROPERTIES:
+:ID: 7a4c85bd-3257-4bbb-8d43-34e172aa48cf
+:MASTER_NODE_ID: 5170b9d8-0ac9-48d8-a48e-54b8a78c8a8d
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [2156.182373, 1866.990601, 255.997849]
+:ANGLES: [-33.561436, -133.965057, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Aim at bottom left of the triangle
+
+** Smoke middle
+:PROPERTIES:
+:ID: a7e63cdf-768c-462f-8575-24e928e43ef4
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [2214.03125, 1926.968262, 138.079575]
+:ANGLES: [0.0, -136.774628, 0.0]
+:END:
+
+(No instructions)
+
+** Smoke CT spawn
+:PROPERTIES:
+:ID: f8e87c79-3aae-4bff-93ce-1b4fe095ac20
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [542.669861, 3005.964355, 161.855606]
+:ANGLES: [0.0, -30.145111, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Wedge into corner
+
+** Smoke CT spawn
+:PROPERTIES:
+:ID: 58e2eaf3-b853-4391-a7d6-c3e92d9b768d
+:MASTER_NODE_ID: f8e87c79-3aae-4bff-93ce-1b4fe095ac20
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [605.323669, 2955.686523, 284.258759]
+:ANGLES: [-36.550533, -38.745838, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Aim at the top left of the antenna
+- Middle click throw
+
+** Smoke CT spawn
+:PROPERTIES:
+:ID: 6df07a74-049d-437e-8d73-16a9dd577d16
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [120.59037, 1593.891113, 107.246925]
+:ANGLES: [0.0, 44.57634, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Wedge into corner in front of barrels
+
+** Smoke CT spawn
+:PROPERTIES:
+:ID: d25873ca-6237-4d97-898e-0d1fef367e02
+:MASTER_NODE_ID: 6df07a74-049d-437e-8d73-16a9dd577d16
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [163.456497, 1665.859009, 224.151428]
+:ANGLES: [-33.105255, 59.220783, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Aim at the roof, use the corner of the towers roof as reference
+- Should be sightly to the right of the corner
+
+** Smoke coffins
+:PROPERTIES:
+:ID: c12ac943-1e1c-46c5-b038-2fa913903241
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [423.745209, 1761.963867, 134.031219]
+:ANGLES: [0.0, 86.759705, 0.0]
+:END:
+
+- Wedge into corner
+
+** Smoke coffins
+:PROPERTIES:
+:ID: 1dc30f2b-b050-48ba-b6e8-1b97a5427da9
+:MASTER_NODE_ID: c12ac943-1e1c-46c5-b038-2fa913903241
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [425.890686, 1799.86084, 209.841049]
+:ANGLES: [-17.502523, 86.759781, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Aim at the bottom left of the 'L' on the wall
+
+** Molo Quad/3rd
+:PROPERTIES:
+:ID: 9b20b21f-f66c-4eeb-9db5-8517e8fbb0a7
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [479.024109, 2016.967529, 136.031204]
+:ANGLES: [0.0, 123.26178, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Wedge into corner by barrel and chipboard
+
+** Molo Quad/3rd
+:PROPERTIES:
+:ID: a481ac71-8e21-40f1-a3e8-19c1a496b2c2
+:MASTER_NODE_ID: 9b20b21f-f66c-4eeb-9db5-8517e8fbb0a7
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [435.189331, 2084.1521, 259.57666]
+:ANGLES: [-36.659233, 123.122559, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Middle of gutter bracket
+
+** Truck lurk smoke
+:PROPERTIES:
+:ID: 04869ab8-dd78-4340-81cd-7ece983ee5d1
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [1607.621094, -274.531372, 256.03125]
+:ANGLES: [0.0, -44.974594, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Wedge into corner by radiator and wall
+
+** Truck lurk smoke
+:PROPERTIES:
+:ID: 5f4e3363-1897-4be0-8144-c64765959c13
+:MASTER_NODE_ID: 04869ab8-dd78-4340-81cd-7ece983ee5d1
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [1674.886963, -346.779877, 335.854309]
+:ANGLES: [-9.197071, -47.04541, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Top right corner on the inside of the frame
+
+** Molo large pit
+:PROPERTIES:
+:ID: 72380cee-8cfc-407c-bd34-8bd9d47038fa
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [1564.259766, -377.96875, 256.03125]
+:ANGLES: [0.0, 13.788879, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Between wooden beam and the guard rail post
+
+** Molo large pit
+:PROPERTIES:
+:ID: b8ebafec-e5c7-42c7-9cac-97535d462dec
+:MASTER_NODE_ID: 72380cee-8cfc-407c-bd34-8bd9d47038fa
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [1656.100952, -338.40799, 320.251007]
+:ANGLES: [-0.217595, 23.304047, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Middle of door frame
+
+** Molo mini pit
+:PROPERTIES:
+:ID: e22cea04-76c2-4323-9cdd-a933c352e7d5
+:MASTER_NODE_ID: d46646b5-31d1-437b-8f01-235a261ecb4a
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [1809.305298, -8.620155, 191.105362]
+:ANGLES: [8.491274, 55.332745, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Aim at the top of the wooden support
+
+** Molo apartments
+:PROPERTIES:
+:ID: 1ef44b82-4298-4474-9d2f-9c7ef9efdaf2
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [353.031464, 25.96875, 71.03125]
+:ANGLES: [0.0, -0.696945, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Wedge into corner
+
+** Molo apartments
+:PROPERTIES:
+:ID: c66efe72-7897-4179-94c1-67f344027a03
+:MASTER_NODE_ID: 1ef44b82-4298-4474-9d2f-9c7ef9efdaf2
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [442.164551, 24.884758, 180.063095]
+:ANGLES: [-26.950703, -0.696768, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Aim at the top right of the D, run and release when at the bottom of the D
+
+** Entry flash B
+:PROPERTIES:
+:ID: b41c928c-b7b2-4fa4-a53e-600a443cd9d1
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [368.970154, 1663.042847, 134.031311]
+:ANGLES: [0.0, 60.861511, 0.0]
+:END:
+
+- Wedge into corner
+
+** Entry flash B
+:PROPERTIES:
+:ID: 0ddf0967-8a6e-45c8-abf4-03639c25712b
+:MASTER_NODE_ID: b41c928c-b7b2-4fa4-a53e-600a443cd9d1
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [417.400543, 1749.918091, 208.224884]
+:ANGLES: [-5.942828, 60.861603, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Right side of arrow
+
+** Smoke arch
+:PROPERTIES:
+:ID: e75e081e-e9c0-4867-aa3a-bd98032948f4
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [91.46875, -195.213135, 51.677376]
+:ANGLES: [0.0, 39.979935, 0.0]
+:END:
+
+- Wedged into corner
+
+** Smoke moto
+:PROPERTIES:
+:ID: 12ed30aa-14a7-4534-b1c1-18d2d8b23990
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [953.970398, 424.040863, 96.03125]
+:ANGLES: [0.0, 13.163681, 0.0]
+:END:
+
+- Wedge into the corner by the mailbox and corner of the building
+
+** Smoke moto
+:PROPERTIES:
+:ID: 8243b7b8-023c-4159-ad23-f2afa12840d9
+:MASTER_NODE_ID: 12ed30aa-14a7-4534-b1c1-18d2d8b23990
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [1050.399048, 446.593811, 173.759491]
+:ANGLES: [-7.983184, 13.163856, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Middle top of the 2nd brick in the arch
+
+** Smoke moto
+:PROPERTIES:
+:ID: 6dd08e1b-0541-4830-afc5-8912b3d42e3c
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [340.332611, 2021.449585, 139.091446]
+:ANGLES: [0.0, -34.646423, 0.0]
+:END:
+
+- Wedge into corner
+
+** Smoke moto
+:PROPERTIES:
+:ID: 7c748672-52bf-45f4-9da8-1c0bc655020c
+:MASTER_NODE_ID: 6dd08e1b-0541-4830-afc5-8912b3d42e3c
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [399.89151, 1980.36731, 268.900024]
+:ANGLES: [-43.652969, -34.596973, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Aim at the top of the window frame in the middle
+

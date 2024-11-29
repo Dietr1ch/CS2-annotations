@@ -1,0 +1,363 @@
+:PROPERTIES:
+:ID:      ad0401a6-82b7-5dcb-ae5f-e86cdb4b9e5c
+:END:
+#+title: CS2| Vertigo
+#+filetags: :Games:CS2:CS2-Maps:
+
+* Info
+* Lineups
+** Smoke short
+:PROPERTIES:
+:ID: 00fe6780-5d96-45ba-86ac-8763838372a9
+:MASTER_NODE_ID: 3856286b-c313-4802-b7d8-ae91c25707a7
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-1408.714111, -1586.921631, 11651.577148]
+:ANGLES: [-80.774063, 54.466778, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+(No instructions)
+
+** Smoke connector
+:PROPERTIES:
+:ID: b319ac4a-7326-4d55-a047-5b601f842407
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-656.032776, -1016.96875, 11648.03125]
+:ANGLES: [0.0, 129.206787, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+(No instructions)
+
+** Smoke connector
+:PROPERTIES:
+:ID: 0fc5bcff-2d8b-41d1-8cc9-05b561f83826
+:MASTER_NODE_ID: b319ac4a-7326-4d55-a047-5b601f842407
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-674.85907, -967.504272, 11795.447266]
+:ANGLES: [-58.04451, 110.836494, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Middle click throw
+
+** Smoke headshot
+:PROPERTIES:
+:ID: de08edb7-758c-495a-9edf-c371a3fad602
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-876.966309, -929.487427, 11628.404297]
+:ANGLES: [0.0, 48.091614, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+(No instructions)
+
+** Smoke headshot
+:PROPERTIES:
+:ID: ef348e98-9c3f-4b6b-aa59-ff0b03763af8
+:MASTER_NODE_ID: de08edb7-758c-495a-9edf-c371a3fad602
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-850.812561, -910.080566, 11783.279297]
+:ANGLES: [-70.993507, 36.576462, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+(No instructions)
+
+** Smoke left of site
+:PROPERTIES:
+:ID: 834c9a1d-725c-4cae-b7e3-66e836ce56c8
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-656.03186, -1016.96875, 11648.03125]
+:ANGLES: [0.0, 142.863464, 0.0]
+:END:
+
+(No instructions)
+
+** Smoke ramp (waterfall)
+:PROPERTIES:
+:ID: 5052e6e2-9c45-4ff8-a4da-80257ed27e90
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-90.034058, -1454.971436, 11776.03125]
+:ANGLES: [0.0, 150.974121, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+(No instructions)
+
+** Smoke ramp (waterfall)
+:PROPERTIES:
+:ID: f69e455b-0295-473d-8c18-abcbbd7a9867
+:MASTER_NODE_ID: 5052e6e2-9c45-4ff8-a4da-80257ed27e90
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-167.978668, -1412.957642, 11886.34082]
+:ANGLES: [-27.690914, 151.674377, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+(No instructions)
+
+** Smoke guardian
+:PROPERTIES:
+:ID: 574d1532-b1a5-4462-91cc-6780066fb837
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-1947.530884, -295.966675, 11799.03125]
+:ANGLES: [0.0, 54.902802, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+(No instructions)
+
+** Smoke guardian
+:PROPERTIES:
+:ID: f763be82-37eb-4dd8-9583-87d6eca50bfa
+:MASTER_NODE_ID: 574d1532-b1a5-4462-91cc-6780066fb837
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-1892.519653, -216.40712, 11888.249023]
+:ANGLES: [-14.701303, 55.338196, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+(No instructions)
+
+** Smoke CT Spawn (aim at wringle)
+:PROPERTIES:
+:ID: 970fd6a9-21c5-4c89-8c79-824700806e6e
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-1978.96875, -39.96875, 11835.03125]
+:ANGLES: [0.0, 23.291016, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+(No instructions)
+
+** Smoke CT Spawn (aim at wringle)
+:PROPERTIES:
+:ID: 8f04b086-94a8-4b83-a7c2-fb02e3656e43
+:MASTER_NODE_ID: 970fd6a9-21c5-4c89-8c79-824700806e6e
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-1888.52832, 2.650085, 11901.070312]
+:ANGLES: [-1.168138, 25.231516, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+(No instructions)
+
+** Smoke center of mid (jump throw)
+:PROPERTIES:
+:ID: 28bce6f7-5d58-412e-9610-07cbe4f0a08b
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-1680.031372, 19.889296, 11776.03125]
+:ANGLES: [0.0, 168.217163, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+(No instructions)
+
+** Smoke center of mid (jump throw)
+:PROPERTIES:
+:ID: 71fcbd5b-77cb-40c4-b94f-77f1ee4d3916
+:MASTER_NODE_ID: 28bce6f7-5d58-412e-9610-07cbe4f0a08b
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-1777.911011, 40.306892, 11838.229492]
+:ANGLES: [0.940562, 168.217117, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+(No instructions)
+
+** Smoke center of mid (run forward, throw just before falling)
+:PROPERTIES:
+:ID: 43fdb451-2463-4279-a11a-9baf159bb85b
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-1978.967041, -39.96875, 11835.03125]
+:ANGLES: [0.0, 30.082977, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+(No instructions)
+
+** Smoke center of mid (run forward, throw just before falling)
+:PROPERTIES:
+:ID: 6b762376-682b-49dd-950f-59b371457e62
+:MASTER_NODE_ID: 43fdb451-2463-4279-a11a-9baf159bb85b
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-1894.283569, 8.989372, 11919.811523]
+:ANGLES: [-11.993508, 30.033527, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+(No instructions)
+
+** Smoke right electric
+:PROPERTIES:
+:ID: 6e6b8fd5-de93-4291-a95f-8991c595a8d5
+:MASTER_NODE_ID: 28091f22-4869-4f5f-9ca2-7f00a3d83593
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-2502.718506, 27.872778, 11705.366211]
+:ANGLES: [-63.502686, 45.535637, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Aim at the left end
+- of the wire rope clamp
+
+** Smoke left electric
+:PROPERTIES:
+:ID: d630f9c7-5a0f-45eb-b460-a4b7f0da01e7
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-2533.970215, -3.96875, 11552.03125]
+:ANGLES: [0.0, 48.755615, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+(No instructions)
+
+** Smoke left electric
+:PROPERTIES:
+:ID: 6a90ccb8-9f14-4a25-9ced-0228da430e95
+:MASTER_NODE_ID: d630f9c7-5a0f-45eb-b460-a4b7f0da01e7
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-2502.331543, 25.587296, 11706.012695]
+:ANGLES: [-64.344269, 43.050789, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Aim at the right end
+- of the wire rope clamp
+
+** Molo quad
+:PROPERTIES:
+:ID: aff7b3d0-5872-4f58-ac09-6d45b2e177aa
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-2347.454102, -58.962952, 11552.03125]
+:ANGLES: [0.0, 101.466644, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+(No instructions)
+
+** Molo quad
+:PROPERTIES:
+:ID: 4dffd9a2-fde5-4c99-b3a8-5df07ab10150
+:MASTER_NODE_ID: aff7b3d0-5872-4f58-ac09-6d45b2e177aa
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-2356.514404, 26.992271, 11666.166016]
+:ANGLES: [-30.195543, 96.017097, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Aim at top right bolt
+
+** Molo headshot
+:PROPERTIES:
+:ID: 057ef722-0a08-4544-ada5-ff532b4222ad
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-2374.27124, -112.96875, 11552.03125]
+:ANGLES: [0.0, 72.344971, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+(No instructions)
+
+** Flash B entry
+:PROPERTIES:
+:ID: 1e93032d-5286-4d7d-8e48-91163e6b2702
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-2352.968506, -637.775574, 11488.03125]
+:ANGLES: [0.0, 77.800354, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Crouch at the metal beam
+
+** Flash B entry
+:PROPERTIES:
+:ID: fdec9c89-4cc1-487f-bd90-0e158c776fab
+:MASTER_NODE_ID: 1e93032d-5286-4d7d-8e48-91163e6b2702
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-2338.73877, -585.10968, 11617.679688]
+:ANGLES: [-56.938156, 74.880325, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Aim at shown, align crosshair
+- with the right side of the window
+
+** Molo & nade danger
+:PROPERTIES:
+:ID: 1d579a3b-3caa-4779-bc07-be854f0021e2
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-2248.777588, -67.971802, 11569.520508]
+:ANGLES: [0.0, 140.033813, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Crouch
+- Not sensitive
+
+** Molo & nade danger
+:PROPERTIES:
+:ID: 5480712e-8c7d-400e-8e61-53132a666586
+:MASTER_NODE_ID: 1d579a3b-3caa-4779-bc07-be854f0021e2
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-2291.333008, 10.664261, 11654.013672]
+:ANGLES: [-26.604441, 118.420509, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Aim below 2nd bolt from the right
+
+** Smoke bottom of A ramp
+:PROPERTIES:
+:ID: 5c7d22da-2e41-47e2-aed2-4af6b81f2678
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-901.933594, -408.601807, 11777.03125]
+:ANGLES: [0.0, -85.929909, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Run towards this spot
+
+** Smoke bottom of A ramp
+:PROPERTIES:
+:ID: 3811017c-f1ac-438c-baa2-1e0a37da98bc
+:MASTER_NODE_ID: 5c7d22da-2e41-47e2-aed2-4af6b81f2678
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-894.979614, -505.619019, 11864.09375]
+:ANGLES: [-13.428309, -85.900192, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Release when reaching this spot
+- Lineup is very forgiving
+- Grenade should bounce of the beam
+

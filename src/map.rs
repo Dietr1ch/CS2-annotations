@@ -934,7 +934,6 @@ impl Annotation {
                     properties.push(("NOTES".to_string(), "JUMP_THROW".to_string()));
                 }
 
-
                 let instructions;
                 if n.description.text.is_empty() {
                     instructions = "(No instructions)".to_string();

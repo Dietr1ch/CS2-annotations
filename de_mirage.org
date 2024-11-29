@@ -1,0 +1,294 @@
+:PROPERTIES:
+:ID:      2a2b5e50-00d3-5b75-bccd-e65824f45dc7
+:END:
+#+title: CS2| Mirage
+#+filetags: :Games:CS2:CS2-Maps:
+
+* Info
+* Lineups
+** Window Smoke
+:PROPERTIES:
+:ID: d746a66d-2303-42a3-b38a-f48ba6eb4eee
+:MASTER_NODE_ID: 3535834e-86a3-4de9-a963-cc29ab8aeb03
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [1307.055786, 47.196411, -52.718651]
+:ANGLES: [-30.937386, -163.909958, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Strafe right, then jump throw
+
+** Stairs smoke
+:PROPERTIES:
+:ID: bb4277a1-409e-4d2c-aa01-7861913cd0e0
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [907.430115, -1036.031982, -251.96875]
+:ANGLES: [0.0, -158.774414, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+(No instructions)
+
+** Stairs smoke
+:PROPERTIES:
+:ID: c6454c37-c47a-4d02-adc5-eab8d73cc85e
+:MASTER_NODE_ID: bb4277a1-409e-4d2c-aa01-7861913cd0e0
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [867.427673, -1051.568359, -100.601532]
+:ANGLES: [-64.587288, -158.774521, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Aim slight off the edge of the building\
+- Combine with jungle smoke
+
+** Lamp flash
+:PROPERTIES:
+:ID: 58d008f2-147f-423a-a2ca-f07159ea2940
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [873.610168, -1036.031372, -251.96875]
+:ANGLES: [0.0, -155.87265, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+(No instructions)
+
+** Lamp flash
+:PROPERTIES:
+:ID: 78745761-6c6a-415e-aa3b-513c0314ecc5
+:MASTER_NODE_ID: 58d008f2-147f-423a-a2ca-f07159ea2940
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [798.480042, -1072.32019, -135.506378]
+:ANGLES: [-33.451729, -154.218887, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+(No instructions)
+
+** Jungle smoke
+:PROPERTIES:
+:ID: 1ae5efea-0053-4eb9-8703-1ab3e13b3e97
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [1092.043335, -1012.002258, -257.438171]
+:ANGLES: [0.0, -162.921753, 0.0]
+:END:
+
+(No instructions)
+
+** Top conn smoke
+:PROPERTIES:
+:ID: ee36e993-22ed-4d05-9268-4e27a2fb7817
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [1239.962158, -1159.484131, -246.550842]
+:ANGLES: [0.0, -175.049622, 0.0]
+:END:
+
+- Wedge into corner
+
+** Top conn smoke
+:PROPERTIES:
+:ID: 666e022a-4079-40d4-afbd-a4cc286aed5d
+:MASTER_NODE_ID: ee36e993-22ed-4d05-9268-4e27a2fb7817
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [1149.443359, -1167.324341, -147.207748]
+:ANGLES: [-24.690639, -175.049759, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Aim at the top of the antenna
+- jump throw
+
+** A Main Lurk Smoke
+:PROPERTIES:
+:ID: 885d6007-4902-4194-b5fa-94ce6c935814
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [509.521759, -1707.965698, -263.96875]
+:ANGLES: [0.0, 126.468445, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+(No instructions)
+
+** A Main Lurk Smoke
+:PROPERTIES:
+:ID: 72b6cd4b-8956-4199-9457-51431976d9ae
+:MASTER_NODE_ID: 885d6007-4902-4194-b5fa-94ce6c935814
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [442.938171, -1638.068481, -174.032532]
+:ANGLES: [-15.127167, 133.609192, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Middle of the line and normal throw
+
+** Palace Lurk smoke
+:PROPERTIES:
+:ID: eeb7fbac-b4a7-49db-a252-bbcb5fcf2a21
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [385.87326, -2127.966309, -39.96875]
+:ANGLES: [0.0, -127.733231, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+(No instructions)
+
+** Palace Lurk smoke
+:PROPERTIES:
+:ID: eaa0e728-1208-4bae-87a4-7f6b355e518b
+:MASTER_NODE_ID: eeb7fbac-b4a7-49db-a252-bbcb5fcf2a21
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [326.838867, -2208.049561, 33.951427]
+:ANGLES: [-5.785342, -126.39624, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Aim between the two horizontal lines at the vertical line and left click throw
+
+** Top mid smoke
+:PROPERTIES:
+:ID: abace398-457e-4a58-aeca-f033270827ad
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [1422.966919, 36.46875, -167.96875]
+:ANGLES: [0.0, -162.45105, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+(No instructions)
+
+** Top mid smoke
+:PROPERTIES:
+:ID: 178482be-7292-4357-9de2-360d1bd53aab
+:MASTER_NODE_ID: abace398-457e-4a58-aeca-f033270827ad
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [1353.240967, 11.80707, -36.822807]
+:ANGLES: [-42.303638, -160.521606, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Tip of the antenna and left click throw
+
+** Window smoke
+:PROPERTIES:
+:ID: c5d46018-6036-4da3-bd6b-ee3427ce422a
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [343.302429, -621.618347, -162.331787]
+:ANGLES: [0.0, 179.533752, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+(No instructions)
+
+** Window smoke
+:PROPERTIES:
+:ID: 55e3cbbf-15a4-4722-86c2-cb950b1b7adc
+:MASTER_NODE_ID: c5d46018-6036-4da3-bd6b-ee3427ce422a
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [258.859711, -620.702576, -45.646915]
+:ANGLES: [-32.384068, 179.378647, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- 1x at the top of the flap on the box and left click throw
+
+** Short smoke
+:PROPERTIES:
+:ID: 52bb2de0-7f6e-4169-aaa6-f3082abd9fc7
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [360.075439, -691.96875, -163.355286]
+:ANGLES: [0.0, 164.377106, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+(No instructions)
+
+** Short smoke
+:PROPERTIES:
+:ID: df78cfdf-3ab5-4d2f-9275-87d794b91bcc
+:MASTER_NODE_ID: 52bb2de0-7f6e-4169-aaa6-f3082abd9fc7
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [274.368622, -662.298462, -58.108246]
+:ANGLES: [-24.909782, 160.904984, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Aim at the tip of the antenna and left click throw
+
+** Smoke kitchen window
+:PROPERTIES:
+:ID: 80a37690-fea0-44ec-987c-6cc40bfc2426
+:MASTER_NODE_ID: 53157d39-88f0-4c3e-ab3a-36d6e4225594
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-212.868134, 853.644531, 5.850853]
+:ANGLES: [-50.946461, -146.991608, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Aim at the top most part of the tower, jump throw
+
+** Smoke kitchen entrance
+:PROPERTIES:
+:ID: 2d509f9b-edcc-4d2c-a35d-0a257e4c18f8
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [-160.027588, 887.969849, -135.328125]
+:ANGLES: [0.0, -151.910706, 0.0]
+:END:
+
+(No instructions)
+
+** Smoke kitchen entrance
+:PROPERTIES:
+:ID: 16bc98be-42a8-4057-854d-a8d5246f542c
+:MASTER_NODE_ID: 2d509f9b-edcc-4d2c-a35d-0a257e4c18f8
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [-225.511414, 853.020386, -4.794472]
+:ANGLES: [-42.075165, -151.91066, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Top part of the right most window and left click throw jump throw
+
+** Smoke CT Spawn
+:PROPERTIES:
+:ID: 4169c6de-a461-43af-ba30-51d6f3b5883b
+:TYPE: grenade
+:SUBTYPE: main
+:POSITION: [1091.133789, -1012.912842, -257.549683]
+:ANGLES: [0.0, -143.77327, 0.0]
+:END:
+
+(No instructions)
+
+** Smoke CT Spawn
+:PROPERTIES:
+:ID: 84e39221-6adc-484d-870b-f81cd783b2f5
+:MASTER_NODE_ID: 4169c6de-a461-43af-ba30-51d6f3b5883b
+:TYPE: grenade
+:SUBTYPE: aim_target
+:POSITION: [1021.083618, -1064.231812, -146.137482]
+:ANGLES: [-29.730185, -143.773361, 0.0]
+:NOTES: JUMP_THROW
+:END:
+
+- Right most part of the tower (not the beam) and left click jump throw
+
